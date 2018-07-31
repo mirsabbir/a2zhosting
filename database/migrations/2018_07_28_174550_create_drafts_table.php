@@ -15,6 +15,12 @@ class CreateDraftsTable extends Migration
     {
         Schema::create('drafts', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('category_id');
+            $table->string('title');
+            $table->text('body');
+            $table->integer('count')->default(0);
+            $table->string('image');
+            $table->string('slug');
             $table->timestamps();
         });
     }

@@ -1,0 +1,52 @@
+@import 'variable.scss';
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    background: $white-secondary;
+}
+img{
+    width:100%;
+}
+ul{
+    list-style-type: none;
+    
+}
+h1{
+    font-size: 36px;
+}
+h2{
+    font-size: 28px;
+}
+h4{
+    font-size: 22px;
+}
+h5{
+    font-size: 18px;
+}
+h6{
+    color: $black-dark;
+    font-size: 15px;
+}
+
+p{
+    color: $black-dark;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    font-size: 14px;
+}
+
+.content_heading{
+    text-align: center;
+    background: $primary-light;
+    padding: 5px 0 2px;
+    color: $white-secondary;
+    margin: 15px 0;
+    h2{
+        margin-bottom: 0;
+    }
+}
+

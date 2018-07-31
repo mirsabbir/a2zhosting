@@ -1,0 +1,37 @@
+ection .portfolio-items {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 32px; }
+    .portfolio-section .portfolio-items li {
+      float: left;
+      padding: 12px; }
+      .portfolio-section .portfolio-items li a {
+        height: 18px;
+        line-height: 18px;
+        padding: 2px 8px 0;
+        display: inline-block;
+        color: #7e7e7e; }
+        .portfolio-section .portfolio-items li a.active {
+          border-left: 1px solid #FF305B;
+          border-right: 1px solid #FF305B;
+          color: #FF305B; }
+  .portfolio-section .portfolio-div {
+    padding: 15px; }
+
+/* portfolio section end */
+/* footer section strat */
+.footer-section {
+  border: 1px solid green;
+  width: 100%;
+  min-height: 620px;
+  bottom: 0;
+  left: 0;
+  background: black;
+  position: fixed;
+  color: white;
+  z-index: -1; }
+
+/* footer section strat */

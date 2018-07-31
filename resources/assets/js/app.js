@@ -6,6 +6,9 @@
  */
 
 require('./bootstrap');
+require('./custom');
+require('./jquery.counterup.min');
+require('./jquery.waypoints.min');
 
 window.Vue = require('vue');
 
@@ -17,6 +20,3 @@ window.Vue = require('vue');
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
-const app = new Vue({
-    el: '#app'
-});
