@@ -23,16 +23,23 @@
   var editor_config = {
     path_absolute : "/",
     selector: "textarea.my-editor",
+    forced_root_block : '',
     plugins: [
       "advlist autolink lists link image charmap print preview hr anchor pagebreak",
       "searchreplace wordcount visualblocks visualchars code fullscreen",
       "insertdatetime media nonbreaking save table contextmenu directionality",
       "emoticons template paste textcolor colorpicker textpattern"
     ],
-    toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image media | template forecolor backcolor |",
+    valid_children : "+body[style], + body[script]",
+    toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image media | template forecolor backcolor | emoticons charmap",
+    charmap_append: [
+        [0x2600, 'sun'],
+        [0x2601, 'cloud']
+    ],
     templates: [
         // {title: 'Some title 1', description: 'Some desc 1', content: 'tsdfnsj'},
-        {title: 'Some title 2', description: 'Some desc 2', url: '{{asset('template.html')}}' }
+        {title: 'Coupon', description: 'Coupon', url: '{{asset('template.html')}}' },
+        {title: 'Rating', description: 'Rating', url: '{{asset('template2.html')}}' }
     ],
     relative_urls: false,
     file_browser_callback : function(field_name, url, type, win) {

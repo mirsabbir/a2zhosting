@@ -29,6 +29,7 @@
       "insertdatetime media nonbreaking save table contextmenu directionality",
       "emoticons template paste textcolor colorpicker textpattern"
     ],
+    valid_children : "+body[style]",
     toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image media | template forecolor backcolor |",
     templates: [
         {title: 'Some title 1', description: 'Some desc 1', content: 'tsdfnsj'},

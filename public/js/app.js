@@ -35948,6 +35948,16 @@ $(function () {
     });
 });
 
+$('.couponcopy').bind('click', function () {
+
+    $('.couponcopy').preventDefault();
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($("#cc").text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+});
+
 /***/ }),
 /* 37 */
 /***/ (function(module, exports) {
