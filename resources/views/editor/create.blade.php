@@ -40,7 +40,8 @@
     templates: [
         // {title: 'Some title 1', description: 'Some desc 1', content: 'tsdfnsj'},
         {title: 'Coupon', description: 'Coupon', url: '{{asset('template.html')}}' },
-        {title: 'Rating', description: 'Rating', url: '{{asset('template2.html')}}' }
+        {title: 'Rating', description: 'Rating', url: '{{asset('template2.html')}}' },
+        {title: 'Rating blue', description: 'Rating blue', url: '{{asset('template3.html')}}' }
     ],
     relative_urls: false,
     file_browser_callback : function(field_name, url, type, win) {
