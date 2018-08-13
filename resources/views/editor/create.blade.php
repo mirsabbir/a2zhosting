@@ -31,6 +31,7 @@
       "emoticons template paste textcolor colorpicker textpattern"
     ],
     valid_children : "+body[style],+body[link],+body[script]",
+    extended_valid_elements: "div[*],span[*]",
     toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image media | template forecolor backcolor | emoticons charmap",
     charmap_append: [
         [0x2600, 'sun'],

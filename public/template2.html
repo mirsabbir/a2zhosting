@@ -1,5 +1,4 @@
 <style>
-
     div.review-item {
     margin-bottom: 30px;
     float: left;
@@ -12,70 +11,70 @@
     }
     div.review-item .shadow {
     float: left;
-}
-div.review-item .top {
+    }
+    div.review-item .top {
     border-top: 6px solid #333;
     padding-bottom: 10px;
     float: left;
-    width: auto;
+    width: 100%;
     -webkit-box-shadow: 0 2px 3px #6f6f6f;
     -moz-box-shadow: 0 2px 3px #6f6f6f;
     box-shadow: 0 2px 3px #6f6f6f;
     z-index: 1000;
     position: relative;
-}
-div.review-item .bottom {
+    }
+    div.review-item .bottom {
     margin: 0;
     padding: 0 20px 15px;
-    /* width: auto; */
+    width: 100%;
     float: left;
     position: relative;
     background-color: #989496;
     background-image: url(/wp-content/themes/ha-desktop/images/backgrounds/table-bg.jpg);
-}
-div.review-item .top .left, div.review-item .top .middle, div.review-item .top .right {
+    }
+    div.review-item .top .left, div.review-item .top .middle, div.review-item .top .right {
     float: left;
-}
-div.review-item .top .left .logo-and-price {
+    }
+    div.review-item .top .left .logo-and-price {
     border: 1px solid #c7c7c7;
     background-color: #f0f0f0;
     margin-left: 4px;
     width: 176px;
-}
-a {
+    }
+    a {
     color: #555;
     text-decoration: none;
-}
-div.review-item .top .right .category-container {
+    }
+    div.review-item .top .right .category-container {
     background-color: #e0e0e0;
     border-top: 3px solid #999;
     text-align: center;
     padding: 5px 0;
     margin: 20px 2px 10px 3px;
-}
-div.review-item .top .right .category-container h3 {
+    }
+    div.review-item .top .right .category-container h3 {
     font-family: Arial,sans-serif;
     font-size: 12px;
     font-weight: 700;
     line-height: 13px;
     margin: 0;
-}
-div.review-item .top .right .category-container {
+    }
+    div.review-item .top .right .category-container {
     background-color: #e0e0e0;
     border-top: 3px solid #999;
     text-align: center;
     padding: 5px 0;
     margin: 20px 2px 10px 3px;
-}
-body {
+    }
+    body {
     margin: 0;
     font-family: Arial,sans-serif;
     font-size: 12px;
     line-height: 20px;
     color: #555;
     background-color: #fff;
-}
-section.review-item .top .middle ul li:before {
+    }
+    div.review-item .top .middle ul li:before {
     position: relative;
     right: 10px;
     bottom: 2px;
@@ -87,96 +86,138 @@ section.review-item .top .middle ul li:before {
     width: 8px;
     height: 7px;
     content: '';
-}
-
+    }
+    div.review-item .bottom table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    color: #555;
+    margin-top: 10px;
+    border: 1px solid #333;
+    }
+    table {
+    max-width: 100%;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    }
+    div.review-item .bottom table tr {
+    background-color: #fff;
+    }
+    div.review-item .bottom table tr th, div.review-item .bottom table tr td {
+    border-right: 1px solid #333;
+    }
+    div.review-item .bottom table tr th {
+    font-family: francois one,sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #333;
+    padding: 10px 0 0;
+    }
+    div.review-item .bottom table tr td {
+    font-size: 14px;
+    padding: 5px 0 10px;
+    }
+    table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey;
+    }
+    div.review-item .bottom table tr td {
+    font-size: 14px;
+    padding: 5px 0 10px;
+    }
+    td, th {
+    display: table-cell;
+    vertical-align: inherit;
+    }
 </style>
 start
-<div>
-
-<div class="review-item normal-item">
+<div itemscope itemtype="http://schema.org/Product">
+    <div class="review-item normal-item" >
         <h2 class="review-item-h2 ">
-        <div class="rank-container ret-sprite number-arrow inline pull-left">
-        <span>2</span>
-        </div>
-        <a href="https://www.hostingadvice.com/visit/?offer=2004&amp;cat=cloud" target="_blank" class="jump pull-left review-title-header">HostGator.com</a>
+            <div class="rank-container ret-sprite number-arrow inline pull-left">
+                <span>2</span>
+            </div>
+            <a itemprop="name" href="https://www.hostingadvice.com/visit/?offer=2004&amp;cat=cloud" target="_blank" class="jump pull-left review-title-header">HostGator.com</a>
         </h2>
         <div class="shadow">
-        <div class="top">
-        <div class="left">
-        <div class="logo-and-price">
-        <a href="https://www.hostingadvice.com/visit/?offer=2004&amp;cat=cloud" target="_blank" class="jump">
-        <img width="175" height="55" src="https://www.hostingadvice.com/wp-content/uploads/2014/11/hostgator.jpg" class="attachment-review-logo-size size-review-logo-size wp-post-image" alt="HostGator review" title="Visit HostGator" srcset="https://www.hostingadvice.com/wp-content/uploads/2014/11/hostgator.jpg 175w, https://www.hostingadvice.com/wp-content/uploads/2014/11/hostgator-72x22.jpg 72w, https://www.hostingadvice.com/wp-content/uploads/2014/11/hostgator-92x28.jpg 92w" sizes="(max-width: 175px) 100vw, 175px"> </a>
-        <div class="price">
-        <p>
-        <span class="monthly-starting-price">Monthly Starting Price</span>
-        <span class="number">$19.98</span>
-        </p>
+            <div class="top">
+                <div class="left">
+                    <div class="logo-and-price">
+                        <a href="https://www.hostingadvice.com/visit/?offer=2004&amp;cat=cloud" target="_blank" class="jump">
+                        <img itemprop="image" width="175" height="55" src="https://www.hostingadvice.com/wp-content/uploads/2014/11/hostgator.jpg" class="attachment-review-logo-size size-review-logo-size wp-post-image" alt="HostGator review" title="Visit HostGator" srcset="https://www.hostingadvice.com/wp-content/uploads/2014/11/hostgator.jpg 175w, https://www.hostingadvice.com/wp-content/uploads/2014/11/hostgator-72x22.jpg 72w, https://www.hostingadvice.com/wp-content/uploads/2014/11/hostgator-92x28.jpg 92w" sizes="(max-width: 175px) 100vw, 175px"> </a>
+                        <div class="price">
+                            <p>
+                                <span class="monthly-starting-price">Monthly Starting Price</span>
+                                <span class="number">$19.98</span>
+                            </p>
+                        </div>
+                    </div>
+                    <a class="jump button ret-sprite visit-btn" target="_blank" href="https://www.hostingadvice.com/visit/?offer=2004&amp;cat=cloud"></a>
+                </div>
+                <div class="middle">
+                    <ul>
+                        <li>Customizable VPS solutions you can&nbsp;<strong>upgrade&nbsp;as needed</strong></li>
+                        <li>Tons of storage with the scalability of the Cloud</li>
+                        <li>Fully or semi-managed servers with root access available</li>
+                        <li>Unlimited domains and MySQL databases</li>
+                        <li>FREE website builder with thousands of FREE templates</li>
+                        <li><a href="https://www.hostingadvice.com/visit/?offer=2004&amp;cat=cloud" target="_blank" class="jump">Get started on HostGator now.</a></li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <div class="category-container">
+                        <h3 class="review-item-h3">CLOUD<br>RATING </h3>
+                        <div itemprop="ratingValue" class="rating-container"><span class="rating">4.9</span></div>
+                        <span itemprop="bestRating" style="display:none;">5</span>
+                        <div class="stars">★★★★★</div>
+                        <div class="full-review-link">
+                            <a href="https://www.hostingadvice.com/review/hostgator/">See Reviews</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <!-- <div class="bottom-header">
+                    <h3 class="review-item-h3">HostGator: Our Expert's Review</h3>
+                    <div class="setup-time-text"><i class="ret-sprite setup-time"></i> <span><strong>Setup time:</strong> 7 minutes</span></div>
+                </div>
+                <div class="bottom-content">
+                    <div class="author-avatar">
+                        <a href="https://www.hostingadvice.com/review/hostgator/">
+                        <img alt="HostGator Review" src="https://www.hostingadvice.com/wp-content/uploads/2016/01/Ryan-Frankel_avatar_1453141380-64x64.jpg" class="avatar avatar-64 photo" height="64" width="64"> </a>
+                    </div>
+                    <div class="expert-review">
+                        <div class="ret-sprite quote-1"></div>
+                        <span>
+                        <span class="author-info"><strong>Ryan Frankel (HostingAdvice.com): </strong></span>
+                        For a custom VPS experience with tons of included features, HostGator is a great host to know. They offer fully managed services with cPanel control, free site-building software, and 52 free scripts to be instantly installed…<a class="go-to-review" href="https://www.hostingadvice.com/review/hostgator/"><span class="underline">Go to full review</span> »</a>
+                        </span>
+                        <div class="ret-sprite quote-2"></div>
+                    </div>
+                </div> -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Money Back Guarantee</th>
+                            <th>Disk Space</th>
+                            <th>Domain Name</th>
+                            <th>Cloud Hosting Plans</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>45 days</td>
+                            <td>25 GB - 3 TB</td>
+                            <td>FREE (1 year)</td>
+                            <td><a class="jump" target="_blank" href="https://www.hostingadvice.com/visit/?offer=2004&amp;cat=cloud">www.hostgator.com/cloud</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-        </div>
-        <a class="jump button ret-sprite visit-btn" target="_blank" href="https://www.hostingadvice.com/visit/?offer=2004&amp;cat=cloud">
-        </a>
-        </div>
-        <div class="middle">
-        <ul>
-        <li>Customizable VPS solutions you can&nbsp;<strong>upgrade&nbsp;as needed</strong></li>
-        <li>Tons of storage with the scalability of the Cloud</li>
-        <li>Fully or semi-managed servers with root access available</li>
-        <li>Unlimited domains and MySQL databases</li>
-        <li>FREE website builder with thousands of FREE templates</li>
-        <li><a href="https://www.hostingadvice.com/visit/?offer=2004&amp;cat=cloud" target="_blank" class="jump">Get started on HostGator now.</a></li>
-        </ul>
-        </div>
-        <div class="right">
-        <div class="category-container">
-        <h3 class="review-item-h3">CLOUD<br>RATING </h3>
-        <div class="rating-container"><span class="rating">4.9</span></div>
-        <div class="stars">★★★★★</div>
-        <div class="full-review-link">
-        <a href="https://www.hostingadvice.com/review/hostgator/">See Reviews</a>
-        </div>
-        </div>
-        </div>
-        </div>
-        <div class="bottom">
-        <div class="bottom-header">
-        <h3 class="review-item-h3">HostGator: Our Expert's Review</h3>
-        <div class="setup-time-text"><i class="ret-sprite setup-time"></i> <span><strong>Setup time:</strong> 7 minutes</span></div>
-        </div>
-        <div class="bottom-content">
-        <div class="author-avatar">
-        <a href="https://www.hostingadvice.com/review/hostgator/">
-        <img alt="HostGator Review" src="https://www.hostingadvice.com/wp-content/uploads/2016/01/Ryan-Frankel_avatar_1453141380-64x64.jpg" class="avatar avatar-64 photo" height="64" width="64"> </a>
-        </div>
-        <div class="expert-review">
-        <div class="ret-sprite quote-1"></div>
-        <span>
-        <span class="author-info"><strong>Ryan Frankel (HostingAdvice.com): </strong></span>
-        For a custom VPS experience with tons of included features, HostGator is a great host to know. They offer fully managed services with cPanel control, free site-building software, and 52 free scripts to be instantly installed…<a class="go-to-review" href="https://www.hostingadvice.com/review/hostgator/"><span class="underline">Go to full review</span> »</a>
-        </span>
-        <div class="ret-sprite quote-2"></div>
-        </div>
-        </div>
-        <table>
-        <thead>
-        <tr>
-        <th>Money Back Guarantee</th>
-        <th>Disk Space</th>
-        <th>Domain Name</th>
-        <th>Cloud Hosting Plans</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-        <td>45 days</td>
-        <td>25 GB - 3 TB</td>
-        <td>FREE (1 year)</td>
-        <td><a class="jump" target="_blank" href="https://www.hostingadvice.com/visit/?offer=2004&amp;cat=cloud">www.hostgator.com/cloud</a></td>
-        </tr>
-        </tbody>
-        </table>
-        </div>
-        </div>
-    </div> 
-    
-</div>end
-       
+    </div>
+</div>
+end
