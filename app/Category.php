@@ -20,12 +20,12 @@ class Category extends Model
         return $this->hasMany('App\Draft');
     }
 
-    public function latestPosts()
-    {
-        return $this->hasMany('App\Post')->latest();
-    }
-    public function popularPosts()
-    {
-        return $this->hasMany('App\Post')->orderBy('count', 'desc');
-    }
+    // public function latestPosts()
+    // {
+    //    return $this->hasMany('App\Post')->latest();
+    // }
+    // public function popularPosts()
+    // {
+    //     return $this->hasMany('App\Post')->orderBy('count', 'desc');
+    // }
 }

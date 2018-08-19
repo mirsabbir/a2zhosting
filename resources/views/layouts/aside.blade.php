@@ -6,7 +6,7 @@
         ?>
         <div class="latest_post">
             <div class="heading">
-                <h5>POPULAR {{$latest->name}}</h5>
+                <h5>Latest {{$latest->name}}</h5>
             </div>
             @for($j=0;$j<4;$j++)
             <?php 

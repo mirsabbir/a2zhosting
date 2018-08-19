@@ -21,7 +21,7 @@
 
 <section class="blog">
 <div class="container">
-    <div class="row">
+    <div class="row" style="margin:20px;">
         <div class="col">
             <form action="/posts/create" >
                 <input type="hidden" name="_rsr" value="p">
@@ -40,6 +40,21 @@
                 <input type="hidden" name="_rsr" value="p">
                 <input type="submit" class="btn btn-primary" value="New Draft">
             </form>
+        </div>
+        <div class="col">
+            <form action="/logout" method="post">
+                @csrf
+                <input type="submit" class="btn btn-primary" value="Logout">
+            </form>
+        </div>
+    </div>
+    <div class="row" style="margin:20px;">
+        <div class="col">
+            <form action="/posts" >
+                <input type="hidden" name="_rsr" value="p">
+                <input type="submit" class="btn btn-primary" value="Recent posts">
+            </form>
+            
         </div>
     </div>
 </div>

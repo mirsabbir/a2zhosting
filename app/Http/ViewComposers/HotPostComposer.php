@@ -28,8 +28,12 @@ class HotPostComposer
      */
     public function compose(View $view)
     {
-        $latests = $this->category->with('latestPosts')->get();
-        $populars = $this->category->with('popularPosts')->get();
+        $latests = $this->category->with(['posts'=>function($q){
+            $q->orderBy('created_at','desc');
+        }])->get();
+        $populars = $this->category->with(['posts'=>function($q){
+            $q->orderBy('count', 'desc');
+        }])->get();
         $view->with(['latests' => $latests, 'populars' => $populars]);
     }
 }

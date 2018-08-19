@@ -22,6 +22,7 @@
         
     </head>
     <body>
+        
         <nav class="navbar navbar-expand-lg nav_custom">
             <div class="container">
                 <a class="navbar-brand" href="/">
@@ -44,7 +45,7 @@
                         ?>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle d-down" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            {{$latest->name}}
+                            {{ucfirst($latest->name)}} 
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <div class="menu_item">
@@ -95,6 +96,12 @@
 
                           
                     </ul>
+
+                    <!-- admin routes -->
+                    @if(Auth::check())
+                    <a href="/editor" style="margin:0 auto;">Admin panel</a>
+                    @endif
+
                     <!-- search box -->
                     <form action="/search" method="get">
                         <div class="search_box">
@@ -110,6 +117,7 @@
                         <button class="search_button ion-android-search" type="submit"></button>
                     </div>
                 </form>
+               
             </div>
             
         </nav>

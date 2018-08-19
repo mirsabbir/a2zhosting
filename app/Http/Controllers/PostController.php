@@ -20,7 +20,8 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        $results = \App\Post::latest()->paginate(10);
+        return view('posts')->with(['results'=>$results, 'q'=>5]);
     }
 
     /**
@@ -41,8 +42,11 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
+        $r = $request->all();
+        $r['slug'] = str_slug($r['slug'],'-');
         
-        $validatedData = $request->validate([
+    
+        $validatedData = \Validator::make($r, [
             'title' => 'required|unique:posts|max:255',
             'content' => 'required',
             'slug' => 'unique:posts|alpha_dash|required|max:255',
@@ -64,7 +68,7 @@ class PostController extends Controller
         $post = new Post;
         
         $post->title = $request->title;
-        $post->slug = $request->slug;
+        $post->slug = $r['slug'];
         $post->image = $path;
         $post->body = $request->content;
         $post->count = 0;
@@ -160,6 +164,7 @@ class PostController extends Controller
     }
 
     public function all(Request $request){
+        
         if($request->save){
             $this->saveAsDraft($request);
             $request->session()->flash('saved', 1);
