@@ -219,7 +219,9 @@
                             <div class="col-2 col-md-1 pr-0">
                                 <img :src="comment.pic" alt="" class="rounded-circle">
                             </div>
-                            <div class="col-10 col-md-11">
+                            
+                            <div class="col-10 col-md-11" >
+                                
                                 <div class="d-flex justify-content-between">
                                     <h5>@{{comment.name}}</h5>
                                     <span class="text-right">Aug 22, 2018 &nbsp;  <i class="ion-android-time">  <b>21:30</b></i> </span>
@@ -228,17 +230,17 @@
                                 
                                 @if(\Auth::check())
                                 <div v-if="comment.published">
-                                    <form :action="comment.id">
+                                    <form :action="comment.hidelink">
                                     <button type="submit" class="btn btn-primary">hide</button>
                                     </form>
                                 </div>
-                                <div v-else="comment.published">
-                                    <form action="">
-                                        <button type="submit" class="btn btn-primary">show</button>
+                                <div v-else>
+                                    <form :action="comment.showlink">
+                                        <button type="submit" class="btn btn-warning">show</button>
                                     </form>
                                 </div>
 
-                                <form action="">
+                                <form :action="comment.deletelink">
                                     <button type="submit" class="btn btn-danger">delete</button>
                                 </form>
                                 @endif
@@ -248,11 +250,9 @@
                                 reply
                                 </button>
 
-                                
-
-
-
                             </div>
+                        
+                            
                         </div>
                         
                         <div v-for="reply in comment.replies">
@@ -272,18 +272,18 @@
 
 
                                 @if(\Auth::check())
-                                <div v-if="comment.published">
-                                    <form action="">
+                                <div v-if="reply.published">
+                                    <form :action="reply.hidelink">
                                     <button type="submit" class="btn btn-primary">hide</button>
                                     </form>
                                 </div>
-                                <div v-else="comment.published">
-                                    <form action="">
-                                        <button type="submit" class="btn btn-primary">show</button>
+                                <div v-else>
+                                    <form :action="reply.showlink">
+                                        <button type="submit" class="btn btn-warning">show</button>
                                     </form>
                                 </div>
 
-                                <form action="">
+                                <form :action="reply.deletelink">
                                     <button type="submit" class="btn btn-danger">delete</button>
                                 </form>
                                 @endif
@@ -373,9 +373,15 @@
             var comments = this.comments;
             for(var i=0;i<comments.length;i++){
                 comments[i].pic = gravatar.url(comments[i].email);
+                comments[i].hidelink = '/comments/hidelink/'+comments[i].id;
+                comments[i].showlink = '/comments/showlink/'+comments[i].id;
+                comments[i].deletelink = '/comments/deletelink/'+comments[i].id;
                 if(comments[i].replies)
                 for(var j=0;j<comments[i].replies.length;j++){
                     comments[i].replies[j].pic = gravatar.url(comments[i].replies[j].email);
+                    comments[i].replies[j].hidelink = '/replies/hidelink/'+comments[i].replies[j].id;
+                    comments[i].replies[j].showlink = '/replies/showlink/'+comments[i].replies[j].id;
+                    comments[i].replies[j].deletelink = '/replies/deletelink/'+comments[i].replies[j].id;
                 }
             }
             //console.log(gravatar.url("sxsx"));

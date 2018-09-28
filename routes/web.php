@@ -13,6 +13,14 @@
 
 Auth::routes();
 
+Route::get('comments/showlink/{comment}','deepCOntroller@show');
+Route::get('comments/hidelink/{comment}','deepCOntroller@hide');
+Route::get('comments/deletelink/{comment}','deepCOntroller@delete');
+
+Route::get('replies/showlink/{reply}','deepCOntroller2@show');
+Route::get('replies/hidelink/{reply}','deepCOntroller2@hide');
+Route::get('replies/deletelink/{reply}','deepCOntroller2@delete');
+
 
 Route::get('comments','CommentController@index');
 Route::post('posts/all/preview','PostController@all');
