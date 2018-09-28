@@ -14,4 +14,7 @@ use Illuminate\Http\Request;
 */
 
 Route::get('/hotposts','Api\HotPostCOntroller@get');
+Route::post('/comment/{post}','Api\CommentController@save');
+Route::post('/reply/{comment}','Api\ReplyController@save');
+
 

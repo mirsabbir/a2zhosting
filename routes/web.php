@@ -13,6 +13,8 @@
 
 Auth::routes();
 
+
+Route::get('comments','CommentController@index');
 Route::post('posts/all/preview','PostController@all');
 Route::get('posts/edit/{post}','PostController@edit');
 Route::resource('posts','PostController');

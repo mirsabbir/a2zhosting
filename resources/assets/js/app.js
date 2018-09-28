@@ -9,6 +9,7 @@ require('./bootstrap');
 require('./custom');
 require('./jquery.counterup.min');
 require('./jquery.waypoints.min');
+window.gravatar = require('gravatar');
 
 window.Vue = require('vue');
 

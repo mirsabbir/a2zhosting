@@ -57,6 +57,15 @@
             
         </div>
     </div>
+    <div class="row" style="margin:20px;">
+        <div class="col">
+            <form action="/comments" >
+                <input type="hidden" name="_rsr" value="p">
+                <input type="submit" class="btn btn-primary" value="review comments">
+            </form>
+            
+        </div>
+    </div>
 </div>
 </section>
 

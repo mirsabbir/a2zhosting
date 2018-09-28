@@ -21,7 +21,7 @@ class PostController extends Controller
     public function index()
     {
         $results = \App\Post::latest()->paginate(10);
-        return view('posts')->with(['results'=>$results, 'q'=>5]);
+        return view('posts')->with(['results'=>$results]);
     }
 
     /**
@@ -94,6 +94,16 @@ class PostController extends Controller
 
     public function showExtra(Category $category,Post $post)
     {
+        if(!\Auth::check())
+        $post = $post->load( ['comments' => function ($query) {
+            $query->with([ 'replies' => function($query){
+                $query->where('published', 1);
+            }
+            ])->where('published', 1);
+        }]);
+        else{
+            $post = $post->load( 'comments.replies');
+        }
         return view('post')->with(['post'=>$post]);
     }
 

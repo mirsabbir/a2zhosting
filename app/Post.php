@@ -23,4 +23,11 @@ class Post extends Model
 
         return $array;
     }
+
+    public function comments()
+    {
+        return $this->hasMany('App\Comment');
+    }
+
+
 }
