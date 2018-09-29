@@ -229,7 +229,7 @@
                                 <p>@{{comment.body}}</p>
                                 
                                 @if(\Auth::check())
-                                <div v-if="comment.published">
+                                <div v-if="comment.published==1">
                                     <form :action="comment.hidelink">
                                     <button type="submit" class="btn btn-primary">hide</button>
                                     </form>
@@ -272,7 +272,7 @@
 
 
                                 @if(\Auth::check())
-                                <div v-if="reply.published">
+                                <div v-if="reply.published==1">
                                     <form :action="reply.hidelink">
                                     <button type="submit" class="btn btn-primary">hide</button>
                                     </form>

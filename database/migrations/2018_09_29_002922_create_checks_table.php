@@ -15,6 +15,7 @@ class CreateChecksTable extends Migration
     {
         Schema::create('checks', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('post_id');
             $table->timestamps();
         });
     }
