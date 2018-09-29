@@ -11,7 +11,7 @@
 
 
 @push('title')
-<title>Review COmments</title>
+<title>Review Comments</title>
 @endpush
 
 
