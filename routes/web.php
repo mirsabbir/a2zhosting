@@ -13,13 +13,13 @@
 
 Auth::routes();
 
-Route::get('comments/showlink/{comment}','deepController@show');
-Route::get('comments/hidelink/{comment}','deepController@hide');
-Route::get('comments/deletelink/{comment}','deepController@delete');
+Route::get('comments/showlink/{comment}','DeepController@show');
+Route::get('comments/hidelink/{comment}','DeepController@hide');
+Route::get('comments/deletelink/{comment}','DeepController@delete');
 
-Route::get('replies/showlink/{reply}','deepController2@show');
-Route::get('replies/hidelink/{reply}','deepController2@hide');
-Route::get('replies/deletelink/{reply}','deepController2@delete');
+Route::get('replies/showlink/{reply}','DeepController2@show');
+Route::get('replies/hidelink/{reply}','DeepController2@hide');
+Route::get('replies/deletelink/{reply}','DeepController2@delete');
 
 
 Route::get('comments','CommentController@index');
