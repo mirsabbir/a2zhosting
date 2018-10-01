@@ -22,6 +22,11 @@
 <script src="//platform-api.sharethis.com/js/sharethis.js#property=5bb231c2752ef70011efd044&product=sticky-share-buttons"></script>
 @endpush
 
+@push('pin')
+<script async defer data-pin-hover="true" data-pin-tall="true" data-pin-round="true" src="//assets.pinterest.com/js/pinit.js"></script>
+@endpush
+
+
 @section('content')
 
 <div class="container">

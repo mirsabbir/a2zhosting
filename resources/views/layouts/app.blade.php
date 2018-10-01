@@ -27,6 +27,8 @@
 
         @stack('sharer')
 
+        @stack('pin')
+
         
         
     </head>
