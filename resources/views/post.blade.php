@@ -9,6 +9,10 @@
 <link rel="stylesheet" href="{{asset('css/app.css')}}">
 @endpush
 
+@push('snippet')
+<meta property="og:image" content="{{asset($post->image)}}">
+@endpush
+
 
 @push('title')
 <title>{{ $post->title }}</title>
