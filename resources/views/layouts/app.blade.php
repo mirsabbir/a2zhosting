@@ -25,7 +25,7 @@
         <meta property="og:image:width" content="1129">
         <meta property="og:image:height" content="567">
 
-
+        <script src="//platform-api.sharethis.com/js/sharethis.js#property=5bb231c2752ef70011efd044&product=sticky-share-buttons"></script>
 
         
         
